@@ -36,9 +36,7 @@ function setGame() {
  }
 
  function setPiece() {
-    // is board full
-    checkBoardFull();
-
+    // check if game over
     if (gameOver) {
         return;
     }
@@ -70,6 +68,9 @@ function setGame() {
 
     //checkWinner();
     checkWinner2(x, c);
+	
+	// is board full
+    checkBoardFull();
  }
 
  // this is the default algorithm to check for a win.
