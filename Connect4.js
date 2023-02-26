@@ -70,7 +70,8 @@ function setGame() {
     checkWinner2(x, c);
 	
 	// is board full
-    checkBoardFull();
+    if (!gameOver)
+        checkBoardFull();
  }
 
  // this is the default algorithm to check for a win.
